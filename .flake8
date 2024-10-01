@@ -1,0 +1,20 @@
+[flake8]
+
+exclude = 
+    .git,
+    __pycache__,
+    migrations,
+    venv,
+    .mypy_cache
+
+ignore = W291
+
+filename = *.py
+max-line-length = 119
+max-complexity = 12
+accept-encodings = utf-8
+inline-quotes = single
+max-linenumber = 500
+multiline-quotes = double
+per_file_ignores = 
+    core/project/settings/templates/settings.dev.py:F821
